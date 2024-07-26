@@ -1,5 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url('indo1.png');
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,15 +12,16 @@ body {
 
 .container {
   text-align: center;
-  background-color: red;
-  width: 200px;
+  background-color: white;
+  width: 400px;
   height: auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 69, 69);
+  box-shadow: 0 0 100px rgb(64 142 45);
 }
 
 h1 {
+  font-family: 'Calistoga', serif;"
   margin-bottom: 20px;
   font-size: 30px;
   color: #2e6e29;
@@ -28,24 +31,29 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   color: #ffffff;
-  background-color: #007bff;
+  background-color: green;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #a4c562;
 }
 
 .recipe-container {
-  margin-top: 20px;
-  text-align: left;
+  margin-top: 2px;
+  text-align: center; /* Center-aligns the text */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Aligns children vertically */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
 }
 
 .recipe-title {
+  margin-top: 2px;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .recipe-instructions {
