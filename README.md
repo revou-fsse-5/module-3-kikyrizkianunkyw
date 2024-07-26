@@ -6,6 +6,9 @@ Welcome to the Indonesian Recipe Random website! This site showcases a fun and i
 Click this link to see the preview:
 <a href="https://github.com/your-repo-link">https://github.com/your-repo-link</a>
 
+<img src="https://i.ibb.co.com/3Mp30fh/Screenshot-2024-07-26-210710.png" alt="Screenshot-2024-07-26-210710">
+
+<img src="https://i.ibb.co.com/wB0Gppj/Screenshot-2024-07-26-210654.png" alt="Screenshot-2024-07-26-210654">
 ---
 
 ## About The Code
