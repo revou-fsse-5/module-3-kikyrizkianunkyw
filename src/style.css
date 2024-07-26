@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,15 +10,18 @@ body {
 
 .container {
   text-align: center;
-  background-color: #ffffff;
+  background-color: red;
+  width: 200px;
+  height: auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 69, 69);
 }
 
 h1 {
   margin-bottom: 20px;
-  color: #333333;
+  font-size: 30px;
+  color: #2e6e29;
 }
 
 button {
