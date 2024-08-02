@@ -27,7 +27,27 @@ function displayRecipe(recipe) {
     `;
 }
 
+//fetch recipe from the Meal idb API
+async function fetchRandomRecipe (){
+    try {
+        const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
+        if (!response.ok) {
+            throw new Error('Unavailable Network');
+        }
+        const data = await response.json();
+        const recipe = {
+            title: data.meals[0].strMeal,
+            instruction: data.meals[0].strInstruction,
+            image: data.meals[0].strMealThumb,
+        };
+        displayRecipe(recipe);
+    } catch (error) {
+        console.error('There is a proble with fetch:', error);
+        getRecipeContainer.innerHTML = '<p>Failed to load recipe.</p>';
+    }
+}
+
 // Execute with event listener
 getRecipeButton.addEventListener('click', () => {
-    displayRecipe(recipe);
+    fetchRandomRecipe();
 });
