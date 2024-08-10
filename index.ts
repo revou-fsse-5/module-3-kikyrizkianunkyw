@@ -59,3 +59,8 @@ async function fetchRandomRecipe(): Promise<void> {
         getRecipeContainer.innerHTML = `<p>Failed to load recipe. Please try again later.</p>`; // Corrected typo
     }
 }
+
+// Execute by adding with event listener to the button
+getRecipeButton.addEventListener('click', () => {
+    fetchRandomRecipe();
+});
